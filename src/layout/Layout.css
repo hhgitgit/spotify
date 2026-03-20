@@ -1,0 +1,35 @@
+.main-right{
+    width: 75%;
+    height: 85vh;
+    background-color: #121212;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+
+.main-right:hover{
+    overflow-y: auto;
+}
+
+.main-right::-webkit-scrollbar{
+    width: 8px;
+}
+
+.main-right::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.main-right::-webkit-scrollbar-thumb{
+    background: #3a3a3a;
+    border-radius: 10px;
+}
+
+.main-right::-webkit-scrollbar-thumb:hover{
+    background: #6a6a6a;
+}
+
+.main-right::-webkit-scrollbar-button{
+    height: 0;
+    width: 0;
+}
+

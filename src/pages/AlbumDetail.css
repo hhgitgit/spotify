@@ -1,0 +1,96 @@
+.album-detail-top{
+    display: flex;
+    align-items: end;
+}
+
+.album-detail-top .top-left img{
+    width: 230px;
+}
+
+.album-detail-top .top-right{
+    margin-left: 20px;
+}
+
+.album-detail-top .top-right h2{
+    font-size: 60px;
+}
+
+.album-detail-top .top-right .info{
+    display: flex;
+    align-items: center;
+}
+
+.album-detail-top .top-right .info img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.album-detail-top .top-right .info span{
+    font-size: 14px;
+}
+
+.album-detail-top .top-right .info>span{
+    opacity: 0.7;
+}
+
+.album-detail-top .top-right .info .artist-name{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.track-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.track-list li:nth-of-type(1){
+    border-bottom: 1px solid #696969;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.track-list li:nth-of-type(2){
+    margin-top: 20px;
+}
+
+.track-list li>p:nth-of-type(1){
+    width: 3%;
+    text-align: center;
+}
+
+.track-list li p:nth-of-type(2){
+    width: 94%;
+    padding-left: 5px;
+}
+
+.track-list li p:nth-of-type(2) .title:hover{
+    text-decoration: underline;
+}
+
+.track-list li p:nth-of-type(2) .artist{
+    width: 3%;
+    text-align: center;
+}
+
+.track-list li p:nth-of-type(2) .artist:hover{
+    text-decoration: underline;
+}
+
+.track-list li p:nth-of-type(2) .artist>span{
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+.date{
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+
+

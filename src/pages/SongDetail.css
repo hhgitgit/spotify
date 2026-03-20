@@ -1,0 +1,89 @@
+.song-detail{
+    padding: 30px 40px;
+}
+
+.song-header{
+    display:flex;
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.song-header .cover{
+    width:250px;
+    border-radius:10px;
+}
+
+.song-header .song-info h1{
+    font-size:32px;
+}
+
+.song-header .artist{
+    color:#1db954;
+    margin-top:10px;
+}
+
+.song-header .album{
+    color:#b3b3b3;
+    margin-top:5px;
+    }
+
+/* 플레이어 */
+
+.song-header .player{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.song-header .play-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#1db954;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.song-header .play-btn:hover{
+    transform:scale(1.1);
+}
+
+.song-header .progress-bar{
+    width:300px;
+    height:6px;
+    background:#333;
+    border-radius:10px;
+    overflow:hidden;
+    }
+
+.song-header .progress{
+    height:100%;
+    background:#1db954;
+}
+
+.song-header .time{
+    font-size:12px;
+    color:#b3b3b3;
+}
+
+/* artist tracks */
+
+.artist-tracks ul{
+    list-style:none;
+    padding:0;
+}
+
+.artist-tracks li{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:10px 0;
+    border-bottom:1px solid #222;
+}
+
+.artist-tracks li .title:hover{
+    text-decoration: underline;
+}
