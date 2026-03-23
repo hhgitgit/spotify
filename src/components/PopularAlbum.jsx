@@ -20,7 +20,7 @@ function PopularAlbum() {
     useEffect(() => {
         const fetchAlbums = async () => {
             try {
-                const res = await fetch('/deezer/search/album?q=a&limit=20');
+                const res = await fetch('https://corsproxy.io/?https://api.deezer.com/chart/0/albums?limit=20');
                 const data = await res.json();
                 setAlbums(data.data);
             } catch(error) {
