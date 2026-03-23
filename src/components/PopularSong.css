@@ -57,3 +57,36 @@
 .song-list li h4:hover{
     text-decoration: underline;
 }
+
+.song-prev-btn, .song-next-btn{
+    color: #B3B3B3;
+}
+
+.song-prev-btn:hover, .song-next-btn:hover{
+    color: white;
+}
+
+.song-wrap{
+    position: relative;
+}
+
+.song-list{
+    overflow-x: hidden;
+}
+
+.song-prev-btn,
+.song-next-btn{
+    position: absolute;
+    top: 70px;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.song-prev-btn{
+    left: -25px;
+}
+
+.song-next-btn{
+    right: -25px;
+}

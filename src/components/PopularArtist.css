@@ -50,3 +50,36 @@
     font-size: 14px;
     margin-top: 5px;
 }
+
+.artist-prev-btn, .artist-next-btn{
+    color: #B3B3B3;
+}
+
+.artist-prev-btn:hover, .artist-next-btn:hover{
+    color: white;
+}
+
+.artist-wrap{
+    position: relative;
+}
+
+.artist-list{
+    overflow-x: hidden;
+}
+
+.artist-prev-btn,
+.artist-next-btn{
+    position: absolute;
+    top: 70px;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.artist-prev-btn{
+    left: -25px;
+}
+
+.artist-next-btn{
+    right: -25px;
+}

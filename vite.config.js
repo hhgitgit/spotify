@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-      server: {
+    plugins: [react()],
+    server: {
         proxy: {
             "/deezer" : {
                 target: "https://api.deezer.com",
@@ -12,5 +12,6 @@ export default defineConfig({
                 rewrite: (path) => path.replace(/^\/deezer/, ""),
             }
         }
-    }
+    },
+    base: "/spotify/"
 })

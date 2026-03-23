@@ -57,3 +57,36 @@
 .album-list li h4:hover{
     text-decoration: underline;
 }
+
+.album-prev-btn, .album-next-btn{
+    color: #B3B3B3;
+}
+
+.album-prev-btn:hover, .album-next-btn:hover{
+    color: white;
+}
+
+.album-wrap{
+    position: relative;
+}
+
+.album-list{
+    overflow-x: hidden;
+}
+
+.album-prev-btn,
+.album-next-btn{
+    position: absolute;
+    top: 70px;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.album-prev-btn{
+    left: -25px;
+}
+
+.album-next-btn{
+    right: -25px;
+}

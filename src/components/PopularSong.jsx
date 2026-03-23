@@ -1,11 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
 import './PopularSong.css'
 
 function PopularSong() {
+
     const [songs, setSongs] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
+
+    const listRef = useRef(null); 
+
+    const scrollLeft = () => {
+        listRef.current.scrollBy({ left: -400, behavior: 'smooth' });
+    }
+
+    const scrollRight = () => {
+        listRef.current.scrollBy({ left: 400, behavior: 'smooth' });
+    }
 
     useEffect(() => {
         const fetchSongs = async () => {
@@ -29,19 +40,24 @@ function PopularSong() {
     return(
         <div>
             <h2 style={{marginBottom: '20px'}}>인기 상승 곡</h2>
-            <ul className="song-list">
-                {songs.map((song) => (
-                    <li key={song.id}>
-                        <Link to={`/albumdetail/${song.album.id}`}>
-                            <img src={song.album.cover_big} alt={song.title} />
-                            <h3>{song.title}</h3>
+            <div className="song-wrap">
+                <ul className="song-list" ref={listRef}>
+                    {songs.map((song) => (
+                        <li key={song.id}>
+                            <Link to={`/albumdetail/${song.album.id}`}>
+                                <img src={song.album.cover_big} alt={song.title} />
+                                <h3>{song.title}</h3>
+                            </Link>
+
                             <Link to={`/artistdetail/${song.artist.id}`}>
                                 <h4>{song.artist.name}</h4>
                             </Link>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+                        </li>
+                    ))}
+                </ul>
+                <div className="song-prev-btn" onClick={scrollLeft}>&lt;</div>
+                <div className="song-next-btn" onClick={scrollRight}>&gt;</div>
+            </div>
         </div>
     );
 }
