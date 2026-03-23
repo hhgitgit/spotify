@@ -24,7 +24,7 @@ function PopularAlbum() {
                 const data = await res.json();
                 setAlbums(data.data);
             } catch(error) {
-                setError('에러가 발생했습니다');
+                setError('에러가 발생했습니다'); 
             } finally {
                 setLoading(false);
             }
